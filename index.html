@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="colorWheelContainer">
+    <div id="colorWheel">
+      <div class="color01 colorDiv"></div>
+      <div class="color02 colorDiv"></div>
+      <div class="color03 colorDiv"></div>
+      <div class="color04 colorDiv"></div>
+      <div class="color05 colorDiv"></div>
+      <div class="color06 colorDiv"></div>
+      <div class="color07 colorDiv"></div>
+      <div class="color08 colorDiv"></div>
+      <div class="color09 colorDiv"></div>
+      <div class="color10 colorDiv"></div>
+      <div class="color11 colorDiv"></div>
+      <div class="color12 colorDiv"></div>
+      <div class="color13 colorDiv"></div>
+      <div class="color14 colorDiv"> </div>
+      <div class="color15 colorDiv"></div>
+      <div class="color16 colorDiv"></div>
+      <div class="color17 colorDiv"></div>
+      <div class="color18 colorDiv"></div>
+      <div class="color19 colorDiv"></div>
+      <div class="color20 colorDiv"></div>
+      <div class="color21 colorDiv"></div>
+      <div id="colorCircle"></div>
+    </div>
+    <br><br><br>
+    <div id="colorInfo">
+      <div class="setColorCode">
+          <h4>
+            <span>HEX :</span>
+              <span id="content1"><span id="HEXColor"></span></span>&nbsp;&nbsp;&nbsp;<span class="copyColor copy-text"   data-clipboard-target="#content1"><i onClick="HexCopied()"  class="fa fa-clone" style="font-size:24px"></i></span>
+          </h4>
+          <h4>
+            <span>RGB :</span>
+            <span id="content2"><span id="RGBColor"></span></span>&nbsp;&nbsp;&nbsp;
+            <span  class="copyColor copy-text" data-clipboard-target="#content2"><i onClick="RgbCopied()" class="fa fa-clone" style="font-size:24px"></i></span>
+          </h4>
+      </div>
+    </div>
+    <br>
+    <div id="confirmColorCode">
+      <i class="fa fa-check-circle" aria-hidden="true"></i> <span id="mainColorName"></span> Color Copied
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+  $(function(){
+    new Clipboard('.copy-text');
+  });
+  </script>
+</body>
+</html>
